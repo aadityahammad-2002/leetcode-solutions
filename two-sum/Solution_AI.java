@@ -6,7 +6,8 @@ The provided code is already optimized with a time complexity of O(n). However, 
            return new int[] {}; 
          } 
         Map<Integer, Integer> numToIndex = new HashMap<>(); 
-        for (int i = 0; i < nums.length; i++) { int complement = target - nums[i]; 
+        for (int i = 0; i < nums.length; i++) { 
+            int complement = target - nums[i]; 
             if (numToIndex.containsKey(complement)) { 
               return new int[] {numToIndex.get(complement), i}; 
             } 
